@@ -11,9 +11,9 @@ app.get('/',(req,res) =>{
 
     //pasando parâmetros para boby
     const blogs = [
-        {titulo: ' chamada 1', conteudo:' A primeira chamada'},
-        {titulo: ' chamada 2', conteudo:' A segunda chamada'},
-        {titulo: ' chamada 3', conteudo:' A terceira chamada'}, 
+       // {titulo: ' chamada 1', conteudo:' A primeira chamada'},
+        //{titulo: ' chamada 2', conteudo:' A segunda chamada'},
+        //{titulo: ' chamada 3', conteudo:' A terceira chamada'}, 
     ];
     res.render('index', { titulo: 'Home', blogs});
 });
@@ -30,8 +30,8 @@ app.get('/sobrenos', (req,res)=>{
     res.redirect('/sobre', { titulo: 'sobre'});
 });
 
-app.get('/blog/criar', (req,res)=>{
-    res.render('/criar', { titulo :'criar novo Blog'});
+app.get('/criar', (req,res)=>{
+    res.render('criar', { titulo :'criar novo Blog'});
 });
 
 //erro 404
