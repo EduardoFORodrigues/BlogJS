@@ -2,7 +2,7 @@ const  express = require('express');
 
 //Express aplicativo configurando o acesso
 const app = express();
-app.listen(4000);
+app.listen(4001);
 
 app.set('view engine', 'ejs');
 
@@ -11,9 +11,9 @@ app.get('/',(req,res) =>{
 
     //pasando parâmetros para boby
     const blogs = [
-       // {titulo: ' chamada 1', conteudo:' A primeira chamada'},
-        //{titulo: ' chamada 2', conteudo:' A segunda chamada'},
-        //{titulo: ' chamada 3', conteudo:' A terceira chamada'}, 
+        {titulo: ' chamada 1', conteudo:' A primeira chamada'},
+        {titulo: ' chamada 2', conteudo:' A segunda chamada'},
+        {titulo: ' chamada 3', conteudo:' A terceira chamada'}, 
     ];
     res.render('index', { titulo: 'Home', blogs});
 });
