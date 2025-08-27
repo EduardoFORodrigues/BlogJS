@@ -1,9 +1,74 @@
-    <nav>
+ 
+    <style>
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #007BFF;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-site {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo-site a {
+    text-decoration: none;
+    color: white;
+}
+
+.titulo-site h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.titulo-site p {
+    margin: 0;
+}
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    background-color: #007BFF; /* ou transparente, se preferir */
+    padding: 15px 30px;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.menu-horizontal li {
+    margin: 0;
+}
+
+.menu-horizontal li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.menu-horizontal li a:hover {
+    background-color: #0056b3;
+    color: #ffdd57;
+}
+
+   </style>
+
+   <nav>
         <div class="Titulo-site">
         <a href="/"></a><h1>Blog</h1></a>
         <p>Site</p>
         </div>
-        <ul>
+        <ul class="menu-horizontal">
             <li><a href="/">Blog</a></li>
             <li><a href="/sobre">Sobre</a></li>
             <li><a href="/criar">Novo Blog</a></li>

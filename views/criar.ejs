@@ -3,6 +3,62 @@
 <%- include('./parciais/cabecalho.ejs') %>
 <body>
    <%- include('./parciais/nav.ejs') %>
+   <style>
+
+    .criar-conteudo-blog {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.criar-conteudo-blog form {
+    display: flex;
+    flex-direction: column;
+}
+
+.criar-conteudo-blog label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.criar-conteudo-blog input,
+.criar-conteudo-blog textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border 0.3s;
+}
+
+.criar-conteudo-blog input:focus,
+.criar-conteudo-blog textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.criar-conteudo-blog button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.criar-conteudo-blog button:hover {
+    background-color: #0056b3;
+}
+
+   </style>
    <div class="criar-conteudo-blog">
     <form>
         <label for="titulo">Titulo do site</label>
